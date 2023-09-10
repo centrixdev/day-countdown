@@ -26,14 +26,15 @@ import Home from './Home'
     </h1>
 
     <Home client:load />
-    <footer class="w-full absolute bottom-0 sm:text-base text-xs text-blue-200/30 ">
+    <footer class="w-full absolute bottom-0 flex justify-between sm:text-base text-xs text-blue-200/30 ">
       
-      <span class="px-4 pt-2">
+      <span class="">
         &copy; {new Date().getFullYear()} Dominik Ruschmann - Alle Rechte vorbehalten
       </span>
-      <span class="sm:absolute sm:p-0 right-4 px-4 ">
-
-        <a href="/impressum" class="underline" >Impressum</a>
+      <span class="flex flex-col text-right">
+        <a  href="/datenschutz" class="underline" >Datenschutz</a>
+        
+        <a  href="/impressum" class="underline" >Impressum</a>
       </span>
 
     </footer>
