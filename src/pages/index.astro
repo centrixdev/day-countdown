@@ -1,16 +1,41 @@
 ---
-
+import Home from './Home'
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A simple countdown timer for the days of the week"
+    />
+    <meta
+      name="keywords"
+      content="countdown, timer, days, day, week, simple, easy, quick, fast, free, open source, open-source, open, source, javascript, js, html, css, web, web app, web-app, webapp, web-application, web-application, application"
+    />
+    <meta name="author" content="Dominik Ruschmann" />
+    <!-- <meta name="theme-color" content="#0987e0" /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Day Countdown</title>
+  </head>
+  <body class="bg-slate-900">
+    <h1 class="text-center w-full font-bold text-4xl text-slate-50 my-5">
+      Day Countdown
+    </h1>
+
+    <Home client:load />
+    <footer class="w-full absolute bottom-0 sm:text-base text-xs text-blue-200/30 ">
+      
+      <span class="px-4 pt-2">
+        &copy; {new Date().getFullYear()} Dominik Ruschmann - Alle Rechte vorbehalten
+      </span>
+      <span class="sm:absolute sm:p-0 right-4 px-4 ">
+
+        <a href="/impressum" class="underline" >Impressum</a>
+      </span>
+
+    </footer>
+  </body>
 </html>
